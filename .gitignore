@@ -5,7 +5,7 @@
 *.zip
 *.tar.gz
 *.rar
-
+*.iml
 *.settings
 *.classpath
 *.project
