@@ -12,5 +12,6 @@
 *.tern-project
 
 *.idea
+*.iml
 
 target
