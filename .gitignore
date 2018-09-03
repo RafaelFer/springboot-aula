@@ -1,16 +1,1 @@
-
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-*.iml
-*.settings
-*.classpath
-*.project
-*.tern-project
-
-*.idea
-
-target
+.idea
