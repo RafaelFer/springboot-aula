@@ -1,1 +1,21 @@
+<<<<<<< HEAD
 .idea
+=======
+
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.iml
+*.settings
+*.classpath
+*.project
+*.tern-project
+
+*.idea
+*.iml
+
+target
+>>>>>>> 8e7d89be9d9c3070cee3587730e496fef5675e1a
