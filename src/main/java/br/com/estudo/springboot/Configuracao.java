@@ -23,6 +23,7 @@ public class Configuracao {
 
     @Bean
     public DataSource dataSource(){
+        System.out.println("Initia Bean");
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/listavip");

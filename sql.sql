@@ -1,3 +1,6 @@
+create database listavip;
+use listavip;
+
 create table convidado(
 id integer auto_increment,
 nome varchar(100) not null,
