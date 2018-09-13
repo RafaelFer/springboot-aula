@@ -36,7 +36,8 @@ public class ConvidadoController {
         System.out.println("Mostrando> "+usuario.toString());
         repository.save(new Convidado(usuario.getNome(),usuario.getEmail(),usuario.getTelefone()));
 
-        br.com.estudo.spring.enviador.enviadorEmail.EnviaEmail
+
+
         return "redirect:listaconvidados";
     }
 
