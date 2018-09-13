@@ -7,9 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.List;
 
 /**
  * Created by rafaelsantos on 30/08/2018.
@@ -37,6 +35,8 @@ public class ConvidadoController {
     public String salvar(Model model, Usuario usuario){
         System.out.println("Mostrando> "+usuario.toString());
         repository.save(new Convidado(usuario.getNome(),usuario.getEmail(),usuario.getTelefone()));
+
+        br.com.estudo.spring.enviador.enviadorEmail.EnviaEmail
         return "redirect:listaconvidados";
     }
 
