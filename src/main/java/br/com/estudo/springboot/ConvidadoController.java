@@ -42,8 +42,6 @@ public class ConvidadoController {
     public String salvar(Model model, Usuario usuario){
         System.out.println("Mostrando> "+usuario.toString());
         repository.save(new Convidado(usuario.getNome(),usuario.getEmail(),usuario.getTelefone()));
-
-        repository.findByNome(usuario.getNome());
         return "redirect:listaconvidados";
     }
 
