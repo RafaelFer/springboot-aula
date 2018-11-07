@@ -4,6 +4,7 @@ import javax.annotation.Generated;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 
 /**
  * Created by rafaelsantos on 03/09/2018.
@@ -21,6 +22,9 @@ public class Convidado {
 
     private String telefone;
 
+    @Transient
+    private String telefoneFmt;
+
     public Convidado() {
     }
 
@@ -28,6 +32,14 @@ public class Convidado {
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
+    }
+
+    public String getTelefoneFmt() {
+        return telefoneFmt;
+    }
+
+    public void setTelefoneFmt(String telefoneFmt) {
+        this.telefoneFmt = telefoneFmt;
     }
 
     public Long getId() {

@@ -29,6 +29,11 @@ public class ConvidadoController {
     public String listaConvidados(Model model) {
 
         Iterable<Convidado> convidados = repository.findAll();
+
+        for (Convidado convidado : convidados) {
+            convidado.setTelefoneFmt("Fmt eita carai 11223334455");
+        }
+
         model.addAttribute("convidados",convidados);
         return "listaconvidados";
     }
@@ -37,6 +42,8 @@ public class ConvidadoController {
     public String salvar(Model model, Usuario usuario){
         System.out.println("Mostrando> "+usuario.toString());
         repository.save(new Convidado(usuario.getNome(),usuario.getEmail(),usuario.getTelefone()));
+
+        repository.findByNome(usuario.getNome());
         return "redirect:listaconvidados";
     }
 

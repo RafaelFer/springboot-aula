@@ -1,5 +1,7 @@
 package br.com.estudo.springboot;
 
+import javax.persistence.Transient;
+
 /**
  * Created by user on 05/09/2018.
  */
@@ -9,8 +11,11 @@ public class Usuario {
     private String email;
     private String telefone;
 
+
+
     public Usuario() {
     }
+
 
     public Usuario(String nome, String email, String telefone) {
         this.nome = nome;
@@ -50,4 +55,6 @@ public class Usuario {
                 ", telefone='" + telefone + '\'' +
                 '}';
     }
+
+
 }
